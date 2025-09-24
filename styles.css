@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;  
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background-color:#fff;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+nav .logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#333;
+}
+ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+ul li a{
+    display: block;
+    text-decoration:none;
+    color:#333;
+    font-size:16px;
+    transition:color 0.3s;
+}
+
+ul li a::after{
+    content:' ';
+    display:block;
+    width:0;
+    height:2px;
+    background:#007BFF;
+    transition:width 0.3s;
+}
+
+
+ul li a:hover::after{
+    width:100%;
+}
+
+ul li a:hover{
+    color:#007BFF;
+}
+
+.flex-box{
+    display:flex;
+    width:1000px;
+    margin:20px auto;
+}
+
+.left{
+    width: 50%;
+}
+.big-img{
+    width:250px;
+}   
+.big-img img{
+    width: inherit;
+
+}   
+.images{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top:20px;
+
+}
+
+.small-img{
+    width: 50px;
+    overflow: hidden;
+    border:1.5px solid black;
+}
+.small-img img{
+    width: inherit;
+    cursor: pointer;
+    
+}
+.small-img img:hover{
+    transform:scale(1.4)
+}
+
+.url{
+    font-size: 16px;
+    font-weight: 400;
+    color:rgb(241, 147, 23);
+
+}
+.pname{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top:50px; 
+}
+.rating i{
+    color: #ec7a0e;
+    margin: 10px 0;
+} 
+.price{
+    font-size: 20px;
+    font-weight: 700;
+    margin:20px 0;
+
+}
+.size{
+    display: flex;
+    align-items: center;
+}
+.psize p{
+    margin-right:20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.psize {
+    width:80px;
+    /* height: 30px; */
+    border:1px solid rgb(241, 115, 11);
+    text-align: center;
+    color:black;
+    padding:10px;
+    margin:0 10px;
+
+}
+.psize.active{
+    background-color: rgb(241, 115, 11);
+    color:#fff;
+    font-weight: 600;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+
+}
+.quantity p{
+    margin-right:20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.quantity input{
+    width: 60px;
+    padding:5px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    border:1px solid rgb(241, 115, 11);
+    margin-right:20px;
+
+}
+.btn-box{
+    display: flex;
+    margin:20px 0;
+}
+.btn-box button{
+    font-size: 18px;
+    padding:8px 25px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+
+}
+.cart-btn{
+    background-color: rgb(241, 115, 11);
+    color:#fff;
+    margin-right:20px;
+}
+.buy-btn{
+    background-color: #435ce9;
+    color:#fff;
+
+}

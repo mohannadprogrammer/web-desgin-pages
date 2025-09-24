@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details pages</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7c9aa353cc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylessheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+</head>
+<body>
+    
+    <nav>
+        <div class="logo" >
+            E-commerce
+        </div>
+        <ul class="">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+            <i class ="fas shopping-cart"></i>
+           <i class="fas fa-shopping-cart "></i>
+            
+        </ul>
+    </nav>
+    
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="./pic1.png" alt="Product Image">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="/pi3.png" alt="" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="/pic2.png" alt="" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="/pic1.png" alt="" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="url">Home > Product > T- shirt </div>
+            <div class="pname">T-shirts for Men</div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+
+            </div>
+            <div class="price"> 40 $</div>
+            <div class="size">
+                <p>Size</p>
+                <div class="psize active">S</div>
+                <div class="psize">M</div>
+                <div class="psize">L</div>
+                <div class="psize">XL</div>
+                <div class="psize">XXL</div>
+            </div>
+
+            <div class="quantity"> 
+                <p>Quantity :</p>
+                <input type="number" value="1" min="1" max="10" value="1">
+                <div class="btn-box"> 
+                    <button class="cart-btn">Add to Cart </button>
+                    <button class="buy-btn">buy now </button>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(smallImgSrc) {
+            bigImg.src = smallImgSrc;
+        }
+    </script>
+  
+</body>
+</html>
